@@ -1,4 +1,5 @@
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 
 # meta: alias file
 alias al="open ~/.oh-my-zsh/custom/aliases.zsh"
