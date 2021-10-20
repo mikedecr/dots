@@ -110,7 +110,7 @@ neofetch
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source .config/aliases.sh
+source $HOME/.config/aliases.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
