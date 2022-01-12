@@ -18,6 +18,6 @@ alias r="radian"
 # open profiles
 alias rp="open ~/.rprofile; open ~/.radian_profile"
 # prevent R from doing any workspace nonsense
-alias R="R --no-save --no-restore"
+# alias R="R --no-save --no-restore"
 
 

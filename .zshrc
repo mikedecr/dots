@@ -12,9 +12,9 @@ export ZSH="/Users/michaeldecrescenzo/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # ZSH_THEME="spaceship"
-ZSH_THEME="avit"
+# ZSH_THEME="avit"
 # ZSH_THEME="evan"
-# ZSH_THEME="pygmalion"
+ZSH_THEME="pygmalion"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
