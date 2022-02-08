@@ -4,7 +4,7 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/michaeldecrescenzo/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -12,9 +12,8 @@ export ZSH="/Users/michaeldecrescenzo/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # ZSH_THEME="spaceship"
-# ZSH_THEME="avit"
-# ZSH_THEME="evan"
-ZSH_THEME="pygmalion"
+ZSH_THEME="evan"
+# ZSH_THEME="pygmalion"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,7 +113,7 @@ source $HOME/.config/aliases.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
