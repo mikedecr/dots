@@ -14,7 +14,7 @@ alias sublime="subl"
 
 # from radian repo (could be outdated...)
 # alias radian="~/Library/Python/3.7/bin/radian"
-alias radian="/opt/miniconda3/bin/radian"
+# alias radian="/opt/homebrew/Caskroom/miniconda/base/bin/radian"
 alias r="radian"
 # open profiles
 alias rp="open $HOME/.rprofile; open $HOME/.radian_profile"
