@@ -7,10 +7,10 @@ Plug 'tpope/vim-surround'
 " code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'jalvesaq/Nvim-R'
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'vim-pandoc/vim-rmarkdown' 
+" handle all R / syntax / REPL through these.
+" no need for pkgs that provide pandoc commands; use quarto-cli or R console 
+Plug 'jalvesaq/Nvim-R', {'branch': 'master'}
+Plug 'jalvesaq/R-Vim-runtime'
 
 call plug#end()
 
