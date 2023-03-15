@@ -3,11 +3,13 @@ alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 
 # --- cmd line tools ---
 
-alias cat="bat"
-alias ls="exa"
-alias ll="exa -alh"
-alias tree="exa --tree"
+alias ll="ls -l"
 alias lg="lazygit"
+
+# alias cat="bat"
+# alias ls="exa"
+# alias ll="exa -alh"
+# alias tree="exa --tree"
 
 
 # --- R ---
