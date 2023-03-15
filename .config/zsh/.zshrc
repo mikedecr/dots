@@ -8,6 +8,10 @@ eval "$(starship init zsh)"
 # aliases
 source $HOME/.config/aliases.sh
 
+# zsh helpers
+# fpath=(path/to/zsh-completions/src $fpath)
+
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
