@@ -5,6 +5,7 @@ alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 
 alias ll="ls -l"
 alias lg="lazygit"
+alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 
 # alias cat="bat"
 # alias ls="exa"
