@@ -1,3 +1,9 @@
+[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+
+# ^ automatically inserted by zap <https://github.com/zap-zsh/zap>
+# uninstall: rm -rf ~/.local/share/zap
+#
+
 # --------------------------------------------------
 #  User configuration
 # --------------------------------------------------
@@ -9,7 +15,7 @@ eval "$(starship init zsh)"
 source $HOME/.config/aliases.sh
 
 # zsh helpers
-# fpath=(path/to/zsh-completions/src $fpath)
+# fpath=($HOME/tools/zsh-completions/src $fpath)
 
 
 # Preferred editor for local and remote sessions
@@ -21,6 +27,11 @@ fi
 
 # print system info
 pfetch
+
+plug "zsh-users/zsh-completions"
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "esc/conda-zsh-completion"
 
 
 # ----- Julia ----------
