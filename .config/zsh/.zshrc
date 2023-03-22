@@ -8,6 +8,10 @@
 #  User configuration
 # --------------------------------------------------
 
+# --- homebrew auto ---
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # starship prompt
 eval "$(starship init zsh)"
 
