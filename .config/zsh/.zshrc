@@ -16,7 +16,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # eval "$(starship init zsh)"
 
 # aliases
-source $HOME/.config/aliases.sh
 
 # zsh helpers
 # fpath=($HOME/tools/zsh-completions/src $fpath)

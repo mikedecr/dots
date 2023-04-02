@@ -3,7 +3,8 @@ alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 
 # --- cmd line tools ---
 
-alias ll="ls -l"
+alias ll="exa -l"
+alias la='exa -la'
 alias lg="lazygit"
 alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 
