@@ -16,23 +16,22 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # eval "$(starship init zsh)"
 
 # aliases
-
-# zsh helpers
-# fpath=($HOME/tools/zsh-completions/src $fpath)
-
+source $HOME/.config/zsh/aliases.sh
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
 
 # print system info
-pfetch
+macchina
 
 plug "zsh-users/zsh-completions"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "esc/conda-zsh-completion"
 plug "zettlrobert/simple-prompt"
 # plug "MAHcodes/distro-prompt"
+
+# plug "esc/conda-zsh-completion"
+# zstyle ":conda_zsh_completion:*" show-global-envs-first true
 
 
 # ----- Julia ----------
