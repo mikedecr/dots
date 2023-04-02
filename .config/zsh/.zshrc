@@ -13,7 +13,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # starship prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # aliases
 source $HOME/.config/aliases.sh
@@ -32,6 +32,8 @@ plug "zsh-users/zsh-completions"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "esc/conda-zsh-completion"
+plug "zettlrobert/simple-prompt"
+# plug "MAHcodes/distro-prompt"
 
 
 # ----- Julia ----------
