@@ -8,14 +8,27 @@
 #  User configuration
 # --------------------------------------------------
 
+# ----- zsh builtin ----------
+
+setopt no_case_glob
+setopt glob_complete
+
+# ----- zap plugins ----------
+
+plug "zettlrobert/simple-prompt"
+plug "zsh-users/zsh-completions"
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
+
+# plug "esc/conda-zsh-completion"
+# zstyle ":conda_zsh_completion:*" show-global-envs-first true
+
 # --- homebrew auto ---
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# starship prompt
-# eval "$(starship init zsh)"
+# ----- aliases and env vars ----------
 
-# aliases
 source $HOME/.config/zsh/aliases.sh
 
 # Preferred editor for local and remote sessions
@@ -24,14 +37,6 @@ export EDITOR='nvim'
 # print system info
 macchina
 
-plug "zsh-users/zsh-completions"
-plug "zsh-users/zsh-autosuggestions"
-plug "zsh-users/zsh-syntax-highlighting"
-plug "zettlrobert/simple-prompt"
-# plug "MAHcodes/distro-prompt"
-
-# plug "esc/conda-zsh-completion"
-# zstyle ":conda_zsh_completion:*" show-global-envs-first true
 
 
 # ----- Julia ----------
@@ -69,8 +74,11 @@ export NVM_DIR="$HOME/.nvm"
 
 # ----- Haskell ----------
 #
-[ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
+#[ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
 export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 #
+
+[ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
+
