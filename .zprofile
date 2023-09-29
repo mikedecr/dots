@@ -12,3 +12,5 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 export ZDOTDIR=$HOME/.config/zsh
 
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
