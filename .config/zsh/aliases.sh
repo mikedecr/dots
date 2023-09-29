@@ -8,10 +8,10 @@ alias la='exa -la'
 alias lg="lazygit"
 alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 
-# alias cat="bat"
-# alias ls="exa"
-# alias ll="exa -alh"
-# alias tree="exa --tree"
+alias cat="bat"
+alias ls="exa"
+alias ll="exa -alh"
+alias tree="exa --tree"
 
 
 # --- R ---
