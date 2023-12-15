@@ -2,7 +2,6 @@
 
 # ^ automatically inserted by zap <https://github.com/zap-zsh/zap>
 # uninstall: rm -rf ~/.local/share/zap
-#
 
 # --------------------------------------------------
 #  User configuration
@@ -10,6 +9,7 @@
 
 # ----- zsh builtin ----------
 
+# todo: document me
 setopt no_case_glob
 setopt glob_complete
 
@@ -32,7 +32,6 @@ plug "zsh-users/zsh-syntax-highlighting"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ----- aliases and env vars ----------
-
 source $HOME/.config/zsh/aliases.sh
 
 # Preferred editor for local and remote sessions
@@ -41,14 +40,10 @@ export EDITOR='nvim'
 # print system info
 macchina
 
-
-
 # ----- Julia ----------
-
 export PATH='/Applications/Julia-1.7.app/Contents/Resources/julia/bin':$PATH
 
 # ----- Conda auto ----------
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -70,19 +65,15 @@ fi
 
 
 # ----- NVM ----------
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # ----- Haskell ----------
-#
 #[ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
 export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-#
-
 [ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
 
