@@ -17,6 +17,10 @@ setopt glob_complete
 
 plug "zettlrobert/simple-prompt"
 plug "zsh-users/zsh-completions"
+
+# case insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 
