@@ -7,14 +7,21 @@ alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 alias lg="lazygit"
 alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 
-# exa
-alias ll="exa -l"
-alias la='exa -la'
-# alias ls="exa"
-alias lh="exa -alh"
-alias tree="exa --tree"
+# eza
+alias ell="eza -l"
+alias ela='eza -la'
+# alias ls="eza"
+alias elh="eza -alh"
+alias et="eza --tree"
 
 # alias cat="bat"
+alias mamba="micromamba"
+alias um="micromamba"
+alias ma="micromamba activate"
+alias ml="micromamba list"
+alias mel="micromamba env list"
+alias mer="micromamba env remove"
+alias mec="micromamba env create"
 
 # --- R ---
 alias r="radian"
