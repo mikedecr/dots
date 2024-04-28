@@ -24,8 +24,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 
-# plug "esc/conda-zsh-completion"
-# zstyle ":conda_zsh_completion:*" show-global-envs-first true
+plug "esc/conda-zsh-completion"
+zstyle ":conda_zsh_completion:*" show-global-envs-first true
 
 # --- homebrew auto ---
 # Set PATH, MANPATH, etc., for Homebrew.
