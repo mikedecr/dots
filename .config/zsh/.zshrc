@@ -71,3 +71,6 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 [ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env" # ghcup-env
 
+# ---- direnv -----
+eval "$(direnv hook zsh)"
+
