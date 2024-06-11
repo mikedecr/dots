@@ -1,0 +1,26 @@
+[character]
+success_symbol = '[\$](bold green)'
+error_symbol = '[x](bold red)'
+
+[shell]
+disabled = false
+
+[username]
+show_always = true
+disabled = false
+
+[conda]
+format = '[$environment](dimmed green) '
+ignore_base = false
+
+# [git_branch]
+
+
+[direnv]
+disabled = false
+
+[rlang]
+disabled = true
+
+[lua]
+disabled = true
