@@ -10,7 +10,7 @@ alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 # eza
 alias ell="eza -l"
 alias ela='eza -la'
-# alias ls="eza"
+alias els="eza"
 alias elh="eza -alh"
 alias et="eza --tree"
 
