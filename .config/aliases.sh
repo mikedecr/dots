@@ -29,4 +29,7 @@ alias r="radian"
 # prevent R from doing any workspace nonsense
 # alias R="R --no-save --no-restore"
 
+# --- python ---
+alias ipy="ipython --no-autoindent"
+
 
