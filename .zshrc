@@ -1,10 +1,44 @@
-[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+# --------------------------------------------------
+#  POSIXCT SHELL-AGNOSTIC
+# --------------------------------------------------
 
-# ^ automatically inserted by zap <https://github.com/zap-zsh/zap>
-# uninstall: rm -rf ~/.local/share/zap
+# ----- aliases -----------
+
+source $HOME/.config/aliases.sh
+
+
+# ----- paths -----------
+
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# julia
+export PATH='/Applications/Julia-1.7.app/Contents/Resources/julia/bin':$PATH
+
+# node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# HASKELL
+[ -f "/Users/michaeldecrescenzo/.ghcup/env" ] && source "/Users/michaeldecrescenzo/.ghcup/env"
+export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+# rust btw
+. "$HOME/.cargo/env"
+
+
+# ----- fetch ----------
+
+# .config/macchina
+# requires homebrew in PATH
+macchina  
+
 
 # --------------------------------------------------
-#  User configuration
+#  ZSH-SPECIFIC
 # --------------------------------------------------
 
 # ----- zsh builtin ----------
@@ -13,7 +47,12 @@
 setopt no_case_glob
 setopt glob_complete
 
-# ----- zap plugins ----------
+
+# ----- zap for zsh plugin mgmt -----------
+
+[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+# ^ automatically inserted by zap <https://github.com/zap-zsh/zap>
+# uninstall: rm -rf ~/.local/share/zap
 
 plug "zettlrobert/simple-prompt"
 plug "zsh-users/zsh-completions"
@@ -27,9 +66,16 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "esc/conda-zsh-completion"
 zstyle ":conda_zsh_completion:*" show-global-envs-first true
 
+
 # --------------------------------------------------
 #  shell inits
 # --------------------------------------------------
+
+eval "$(direnv hook zsh)"
+
+# .config/starship.toml
+eval "$(starship init zsh)"
+
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
@@ -43,8 +89,4 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-
-
-eval "$(direnv hook zsh)"
-eval "$(starship init zsh)"
 
