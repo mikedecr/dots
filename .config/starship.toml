@@ -10,11 +10,10 @@ show_always = true
 disabled = false
 
 [conda]
-format = '[$environment](dimmed green) '
+format = '[µmamba:$environment](dimmed green) '
 ignore_base = false
 
 # [git_branch]
-
 
 [direnv]
 disabled = false
