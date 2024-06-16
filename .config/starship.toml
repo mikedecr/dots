@@ -1,25 +1,42 @@
+format = """
+$conda\
+$username\
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$direnv\
+$line_break\
+$shell\
+$character
+"""
+
+[conda]
+format = '[µmamba:$environment](dimmed green) '
+ignore_base = false
+
+[username]
+show_always = true
+disabled = false
+
+# git stuff is mutually exclusive.
+# show branch only when attached; commit only when detached
+
+[git_branch]
+only_attached = true
+
+[git_commit]
+only_detached = true
+tag_disabled = false
+format = '[detached @ $hash$tag]($style) '
+style = 'bold purple'
+
+[direnv]
+disabled = false
+
 [character]
 success_symbol = '[\$](bold green)'
 error_symbol = '[x](bold red)'
 
 [shell]
 disabled = false
-
-[username]
-show_always = true
-disabled = false
-
-[conda]
-format = '[µmamba:$environment](dimmed green) '
-ignore_base = false
-
-# [git_branch]
-
-[direnv]
-disabled = false
-
-[rlang]
-disabled = true
-
-[lua]
-disabled = true
