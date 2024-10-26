@@ -1,15 +1,16 @@
-format = """
-$conda\
-$username\
-$directory\
-$git_branch\
-$git_commit\
-$git_status\
-$direnv\
-$line_break\
-$shell\
-$character
-"""
+# format = """
+# $conda\
+# $username\
+# $directory\
+# $git_branch\
+# $git_commit\
+# $git_status\
+# $direnv\
+# $line_break\
+# $battery\
+# $shell\
+# $character
+# """
 
 [conda]
 format = '[µmamba:$environment](dimmed green) '
