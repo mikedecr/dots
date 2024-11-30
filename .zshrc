@@ -82,6 +82,11 @@ eval "$(starship init zsh)"
 . /opt/homebrew/Cellar/autojump/22.5.3_3/share/autojump/autojump.zsh
 
 
+# --- mamba ---
+# here's the thing... shell init onlly is annoying.
+# I want an exe in path at all times, and the shell init can _also_ happen I guess
+export PATH="/Users/michaeldecrescenzo/.local/bin/micromamba":$PATH
+
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
 export MAMBA_EXE='/Users/michaeldecrescenzo/.local/bin/micromamba';
