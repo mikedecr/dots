@@ -36,6 +36,9 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # requires homebrew in PATH
 macchina  
 
+export EDITOR=$(which nvim)
+export VISUAL=$EDITOR
+
 
 # --------------------------------------------------
 #  ZSH-SPECIFIC

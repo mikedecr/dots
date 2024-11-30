@@ -23,7 +23,7 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 
 # --- posixct customizations ---
 
-export EDITOR='nvim'
+export EDITOR=$(which nvim)
 
 source $HOME/.config/aliases.sh
 
