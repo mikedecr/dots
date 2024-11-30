@@ -29,7 +29,6 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # rust btw
 . "$HOME/.cargo/env"
 
-
 # ----- fetch ----------
 
 # .config/macchina
@@ -78,6 +77,9 @@ eval "$(direnv hook zsh)"
 
 # .config/starship.toml
 eval "$(starship init zsh)"
+
+# autojump
+. /opt/homebrew/Cellar/autojump/22.5.3_3/share/autojump/autojump.zsh
 
 
 # >>> mamba initialize >>>
