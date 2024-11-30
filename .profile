@@ -37,3 +37,5 @@ if [ -f .bashrc ]; then
 fi
 
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"

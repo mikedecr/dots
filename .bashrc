@@ -23,3 +23,5 @@ unset __mamba_setup
 
 
 macchina
+
+. "$HOME/.local/bin/env"
