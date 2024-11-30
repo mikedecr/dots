@@ -101,6 +101,9 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 
 
+# pixi pkg manager
+eval "$(pixi completion --shell zsh)"
+
 # not sure who did this...I'm going to guess uv
 . "$HOME/.local/bin/env"
 # why? contents of this dir:
