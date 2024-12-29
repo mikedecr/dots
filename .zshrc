@@ -33,7 +33,6 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 
 # .config/macchina
 # requires homebrew in PATH
-macchina  
 
 export EDITOR=$(which nvim)
 export VISUAL=$EDITOR
@@ -56,7 +55,6 @@ setopt glob_complete
 # ^ automatically inserted by zap <https://github.com/zap-zsh/zap>
 # uninstall: rm -rf ~/.local/share/zap
 
-plug "zettlrobert/simple-prompt"
 plug "zsh-users/zsh-completions"
 
 # case insensitive completion

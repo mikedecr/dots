@@ -1,16 +1,16 @@
-# format = """
-# $conda\
-# $username\
-# $directory\
-# $git_branch\
-# $git_commit\
-# $git_status\
-# $direnv\
-# $line_break\
-# $battery\
-# $shell\
-# $character
-# """
+format = """
+$conda\
+$username\
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$direnv\
+$line_break\
+$battery\
+$shell\
+$character
+"""
 
 [conda]
 format = '[µmamba:$environment](dimmed green) '
@@ -19,6 +19,9 @@ ignore_base = false
 [username]
 show_always = true
 disabled = false
+
+[directory]
+truncation_symbol = ".../"
 
 # git stuff is mutually exclusive.
 # show branch only when attached; commit only when detached
