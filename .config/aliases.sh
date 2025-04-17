@@ -1,38 +1,33 @@
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
-
-
 alias cv="cd ~/.config/nvim"
 
-# --- cmd line tools ---
+# git cli
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots-r='/usr/bin/git --git-dir=$HOME/.dotfiles_R/ --work-tree=$HOME'
 
 # lazygit
 alias lg="lazygit"
 alias lg-dots='lazygit -g $HOME/.dotfiles -w $HOME'
 
-# eza
+# eza: `ls` alternative
 alias ell="eza -l"
 alias ela='eza -la'
 alias els="eza"
 alias elh="eza -alh"
 alias et="eza --tree"
 
-# alias cat="bat"
-alias mamba="micromamba"
+# micromamba
 alias um="micromamba"
 alias ma="micromamba activate"
+alias md="micromamba deactivate"
 alias ml="micromamba list"
 alias mel="micromamba env list"
-alias mer="micromamba env remove"
 alias mec="micromamba env create"
+alias mer="micromamba env remove"
 
-# --- R ---
+# R
 alias r="radian"
-
-# prevent R from doing any workspace nonsense
 # alias R="R --no-save --no-restore"
 
-# --- python ---
+# Python
 alias ipy="ipython --no-autoindent"
-
 
