@@ -1,38 +1,49 @@
 format = """
-$conda\
 $username\
 $directory\
+$conda\
 $git_branch\
 $git_commit\
 $git_status\
 $direnv\
-$line_break\
 $battery\
-$shell\
+$line_break\
 $character
 """
+# $shell\
 
 [conda]
-format = '[µmamba:$environment](dimmed green) '
+format = '[µm:$environment](dimmed green) '
 ignore_base = false
+
 
 [username]
 show_always = true
 disabled = false
+format = '[$user]($style) '
 
 [directory]
-truncation_symbol = ".../"
+truncation_symbol = '…/'
 
 # git stuff is mutually exclusive.
-# show branch only when attached; commit only when detached
+# show branch only when attached HEAD; commit only when detached from HEAD
 
 [git_branch]
 only_attached = true
+format = '[$symbol$branch(:$remote_branch)]($style) '
+symbol = "on "
+
+[git_status]
+modified = '∆'
+stashed = '§'
+format = '([$all_status$ahead_behind]($style) )'
+style = 'bold purple'
+
 
 [git_commit]
 only_detached = true
 tag_disabled = false
-format = '[detached @ $hash$tag]($style) '
+format = '[detached HEAD @ $hash$tag]($style) '
 style = 'bold purple'
 
 [direnv]
