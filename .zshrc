@@ -1,13 +1,14 @@
 # --------------------------------------------------
-#  POSIXCT SHELL-AGNOSTIC
+#  POSIXCT / SHELL-AGNOSTIC
 # --------------------------------------------------
 
-# ----- aliases -----------
+# --- env ---
 
-source $HOME/.config/aliases.sh
+export EDITOR=$(which nvim)
+export VISUAL=$EDITOR
 
 
-# ----- paths -----------
+# ----- PATH mods -----------
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -26,16 +27,13 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin"
 # export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
-# rust btw
+# rust
 . "$HOME/.cargo/env"
 
-# ----- fetch ----------
 
-# .config/macchina
-# requires homebrew in PATH
+# ----- aliases -----------
 
-export EDITOR=$(which nvim)
-export VISUAL=$EDITOR
+source $HOME/.config/aliases.sh
 
 
 # --------------------------------------------------
@@ -80,8 +78,9 @@ eval "$(starship init zsh)"
 . /opt/homebrew/Cellar/autojump/22.5.3_3/share/autojump/autojump.zsh
 
 
-# --- mamba ---
-# here's the thing... shell init onlly is annoying.
+# --- micromamba ---
+
+# here's the thing... shell init only is annoying.
 # I want an exe in path at all times, and the shell init can _also_ happen I guess
 export PATH="/Users/michaeldecrescenzo/.local/bin/micromamba":$PATH
 
@@ -100,7 +99,7 @@ unset __mamba_setup
 
 
 # pixi pkg manager
-eval "$(pixi completion --shell zsh)"
+# eval "$(pixi completion --shell zsh)"
 
 # not sure who did this...I'm going to guess uv
 . "$HOME/.local/bin/env"
@@ -110,3 +109,12 @@ eval "$(pixi completion --shell zsh)"
 #  micromamba
 #  uv
 #  uvx
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/michaeldecrescenzo/.opam/opam-init/init.zsh' ]] || source '/Users/michaeldecrescenzo/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
